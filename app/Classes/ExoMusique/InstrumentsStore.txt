@@ -1,0 +1,56 @@
+Gestion d’un magasin d’instruments
+
+Nous allons nous pencher dans cet exercice sur un programme permettant de gérer un magasin d’instruments de
+musique. Une classe Magasin sera au coeur de votre programme. Pour l’instant,
+contentez vous de créer le fichier magasin.class.php qui vous permettra de faire vos tests.
+
+Le magasin gère les instruments suivants :
+— Instruments à cordes
+— Pianos : à queue, droits, numériques ;
+— Guitares : acoustiques, électriques.
+— Instruments à vent
+— Hautbois
+— Clarinette
+— Flûte traversière
+
+Chaque instrument possède un nom, ainsi qu’un prix d’achat et un prix de
+vente. Les instruments à cordes possèdent une longueur et une largeur, tandis
+que les instruments à vent sont dotés d’un type : à biseau (flûte), à anche simple
+(clarinette), à anche double (hautbois).
+
+Tous les pianos possèdent un nombre de touches (en général, 88). Les pianos
+numériques possèdent (ou non) le toucher lourd, ainsi qu’une qualité d’échantillonnage
+(allant de 1 à 3). Les pianos droits possèdent des cordes droites ou croisées, et sont
+dotés (ou non) d’un silencieux. Enfin, les pianos à queue ont de particulier leur
+taille, qui est notée ”4/4”, ”1/2”, ”1/4”, ou ”Crapaud”.
+
+Les guitares acoustiques sont pour gaucher/droitier, et ont un tirant symbolisé
+par une valeur de 1 à 3. Les guitares électriques sont fournies (ou non) avec un
+amplificateur, et avec (ou non) des pédales d’effets sonores.
+
+Une flûte traversière ou un hautbois gère ou non les trilles, et possède une
+qualité acoustique allant de 1 à 5. Une clarinette est adaptée à une utilisation
+symphonique, de chambre, ou harmonique.
+Concevez une architecture orientée objet pour gérer les différents instruments de
+musique.
+
+Écrivez une méthode ficheTechnique() qui présente l’instrument et toutes ses
+caractéristiques (incluant celles héritées de classes mères !)
+
+Réfléchissons à la classe Magasin. Le magasin contient des stocks de chaque ins-
+trument, paie un loyer chaque mois de montantLoyer euros. Le magasin possède
+également une trésorerie (un int).
+
+Écrivez la méthode fournir(instrument, quantite) qui permet de remplir les stocks d’un instrument donné. 
+Vous devrez vérifier que le magasin détient l’argent pour ses achats.
+Écrivez une méthode vendre(instrument), appelée lorsqu’un instrument est vendu. 
+Les stocks et la trésorerie du magasin doivent évoluer en conséquence.
+
+Si vous avez le temps...
+
+Écrivez une fonction simulerFonctionnement() qui détaille le fonctionnement du
+magasin pour chaque mois ; un nombre (tiré au hasard) de clients visite le magasin
+chaque mois, et chaque client à une probabilité fixée par vos soins d’acheter un
+instrument : plus l’instrument est cher, plus la probabilité est faible !
+
+Le magasin est-il rentable ? Sous quels paramètres ?

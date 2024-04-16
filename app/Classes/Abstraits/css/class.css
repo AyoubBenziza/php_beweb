@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background: url("https://wallpaperaccess.com/full/5927911.gif");
+}
+
+p{
+    display: inline-flex;
+    width: 40%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
